@@ -1,0 +1,24 @@
+{
+  "name": "p2p-chat",
+  "version": "1.0.0",
+  "description": "Making a p2p chat application with react and gun.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sloansta/p2p-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sloansta/p2p-chat/issues"
+  },
+  "homepage": "https://github.com/Sloansta/p2p-chat#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "gun": "^0.2020.1237"
+  }
+}
