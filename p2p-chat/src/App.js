@@ -13,7 +13,7 @@ const initialState = {
 
 function reducer(state, message) {
   return {
-    messages: [message, ...state.message]
+    messages: [message, ...state.messages]
   };
 } 
 
@@ -25,7 +25,7 @@ export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    const messages = GUN.get('messages');
+    const messages = gun.get('messages');
 
     messages.map().on(m => {
       dispatch({
@@ -41,7 +41,7 @@ export default function App() {
   }
 
   function saveMessages() {
-    const messages = GUN.get('messages');
+    const messages = gun.get('messages');
     messages.set({
       name: formState.name,
       message: formState.message,
@@ -78,7 +78,7 @@ export default function App() {
           </div>
         ))
       }
-      
+
     </div>
   );
 }
