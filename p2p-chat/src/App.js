@@ -49,7 +49,7 @@ export default function App() {
     });
 
     setFormState({
-      name: '', message: ''
+      name: '', message: '',
     });
   }
 
@@ -57,7 +57,8 @@ export default function App() {
     <div style={{ padding: 30 }}>
       <input 
       onChange={onChange} 
-      placeholder="Name"
+      placeholder="name"
+      name="name"
       value={formState.name}
       />
       <input 
@@ -71,7 +72,7 @@ export default function App() {
 
       {
         state.messages.map(message => (
-          <div key={message.createdAt}>
+          <div>
             <h2>{message.message}</h2>
             <h3>From: {message.name}</h3>
             <p>Date: {message.createdAt}</p>
